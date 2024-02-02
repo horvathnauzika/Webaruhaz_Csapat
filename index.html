@@ -6,15 +6,15 @@
     <title>Horváth Nauzika</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stilus.css">
 </head>
 <body class="container-fluid">
-    <main class="row">
-        <header class="col-md-12">
+    <main class="row" style="background-color: #e2dcd9; color: #473734;">
+        <header class="col-md-12" style="margin-top: 1%;">
             <h1>Webáruház</h1>
         </header>
         <nav class="navbar navbar-expand-sm bg-light">
             <div class="container-fluid">
-                <!-- Links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Kezdőlap</a>
@@ -23,87 +23,96 @@
                         <a class="nav-link active" href="#">Galéria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Mérettáblázat</a>
+                        <a class="nav-link active" href="#">Táblázat</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <aside class="col-md-3">
+        <aside class="col-md-3" style="margin-top: 2%;">
             <h2>Sablon1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tempus nisi. Aenean auctor sit amet magna non euismod. Cras tortor metus, vestibulum et mollis ultrices, pharetra id quam. Duis non est augue. Maecenas felis orci, pellentesque sit amet vulputate venenatis, ullamcorper eget orci. Quisque mattis blandit elit, eu facilisis lacus accumsan sed. Donec ac vehicula arcu, vitae molestie ante.</p>
         </aside>
-        <article class="col-md-6 row">
+        <article class="col-md-6 row" style="gap: 5px; margin-top: 2%;">
             <div class="card col-md-2" style="width:400px">
-                <img class="card-img-top" src="" alt="Card image">
+                <h4 class="card-title" style="text-align: center;">A fattyú</h4>
+                <img class="card-img-top" src="kepek/a_fattyu.jpg" alt="Fattyu">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
+                  <p class="card-text">1755-ben Ludvig Kahlen kapitány elindul, hogy teljesítsen egy lehetetlennek tűnő küldetést: meg akarja hódítani a zord, lakhatatlan dán vidéket. A férfi célja, hogy kolóniát építsen a király nevében. De egy könyörtelen helyi földesúr másképp gondolkodik és arrogánsan azt hiszi, hogy ez a föld kizárólag az övé. Kahlen keményfejű és úgy érzi, a király megbízása és saját elszántsága elegendő ahhoz, hogy sikerrel járjon. Az összecsapás elkerülhetetlennek tűnik a két fél között, a kapitányt ráadásul az érzelmei is fűtik, miután rátalál élete szerelmére.</p>
+                  <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
+                  <p>Játékidő: 127 perc (2 óra 7 perc)</p>
+                  <p>Jegyek ára: Felnőtt jegy: 3000 Ft, diák jegy: 2000 Ft, 6 éven aluliaknak ingyenes</p>
+                  <a href="#" class="btn btn-primary">Megveszem</a>
                 </div>
+            </div>
+            <div class="card col-md-2" style="width:400px">
+              <h4 class="card-title" style="text-align: center;">Aquaman és az elveszett királyság</h4>
+              <img class="card-img-top" src="kepek/aquaman.jpg" alt="Aquaman">
+              <div class="card-body">
+                <p class="card-text">Az óceán soha nem békés! Ezért nem pihenhet meg egyetlen percre sem az óceánok hét királyságának uralkodója. Black Manta megpróbálta már legyőzni Aquamant, a világ tengereinek urát (Jason Momoa), de kudarcot vallott. Továbbra is meg akarja bosszulni az apja halálát, így aztán bármire hajlandó, és bárkivel szövetkezik, hogy elpusztítsa ősellenségét. És most erősebb, mint eddig bármikor, mert megszerezte a legendák csodafegyverét, a fekete szigonyt, amelynek segítségével egy ősi, gonosz erőt szabadít a világra. Aquaman kénytelen kiszabadítani börtönbe zárt testvérét, Orm királyt (Patrick Wilson), Atlantisz egykori uralkodóját. Békét nem kötnek, de átmeneti szövetséget igen - ha nem teszik meg, akkor Aquaman családja, azután az összes tenger, végül az egész világ elpusztul.</p>
+                <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
+                <p>Játékidő: 124 perc (2 óra 4 perc)</p>
+                <p>Jegyek ára: Felnőtt jegy: 3000 Ft, diák jegy: 2000 Ft, 6 éven aluliaknak ingyenes</p>
+                <a href="#" class="btn btn-primary">Megveszem</a>
               </div>
-              <div class="card col-md-2" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card" style="width:400px">
-                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
+          </div>
+          <div class="card col-md-2" style="width:400px">
+            <h4 class="card-title" style="text-align: center;">Lassie - Állati mentőakció</h4>
+            <img class="card-img-top" src="kepek/lassie.jpg" alt="Lassie">
+            <div class="card-body">
+              <p class="card-text">Lassie kalandja folytatódik. Flo imádott kutyájával, Lassie-vel nagynénjénél nyaral Dél-Tirolban. A felhőtlen nyaralást beárnyékolja Pippa, a kis terrier eltűnése, akit vélhetően elraboltak. Flo és Lassie azonnal a kis négylábú keresésére indul. Hamarosan kiderül, hogy nem Pippa az egyetlen kutyus, aki rejtélyes körülmények között tűnt el. Lassie és barátai nyomozni kezdenek és kiderül, az ügy sokkal nagyobb titkokat rejt, mint gondolták.</p>
+              <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 6 éven aluliaknak nem ajánlott!</p>
+              <p>Játékidő: 91 perc (1 óra 31 perc)</p>
+              <p>Jegyek ára: Felnőtt jegy: 3000 Ft, diák jegy: 2000 Ft, 6 éven aluliaknak ingyenes</p>
+              <a href="#" class="btn btn-primary">Megveszem</a>
+            </div>
+        </div>
+        <div class="card col-md-2" style="width:400px">
+          <h4 class="card-title" style="text-align: center;">Wonka</h4>
+          <img class="card-img-top" src="kepek/wonka.jpg" alt="Wonka">
+          <div class="card-body">
+            <p class="card-text">Willy Wonka (Timothée Chalamet) igazi legenda.  Végre lehull a lepel a csokik mágusa, az édességek géniusza, a legkülönlegesebb, legízesebb, legfurább csokigyáros, Willy Wonka életének nagy titkáról: arról, hogy ő is volt gyerek. Aztán fiatalember. Bejárta a világot, őrült csokikat talált fel, és még őrültebb álmokat hajkurászott: arra vágyott, hogy a világjárás véget érjen, ő letelepedjen, és megnyithassa bűvös-bájos-ízes-mágikus csokiboltját. De a szülővárosában sajnos már működik egy csokigyáros trió, amely a legkeserűbb módszerektől sem riad vissza, ha a csokibirodalmát kell megvédenie. Wonka azonban a bajban, a rabságban vagy akár egy gőzmosodában is megőrzi ötletekből kifogyhatatlan jó kedvét, és készen áll rá, hogy bebizonyítsa: a legjobb dolgok az életben egy nagy álommal kezdődnek, és annak, aki elég szerencsés hozzá, hogy Willy Wonka közelében éljen, azzal bármi megtörténhet.</p>
+            <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 6 éven aluliaknak nem ajánlott!</p>
+            <p>Játékidő: 117 perc (1 óra 57 perc)</p>
+            <p>Jegyek ára: Felnőtt jegy: 3000 Ft, diák jegy: 2000 Ft, 6 éven aluliaknak ingyenes</p>
+            
+            <a href="#" class="btn btn-primary">Megveszem</a>
+          </div>
+      </div>
+      <div class="card col-md-2" style="width:400px">
+        <h4 class="card-title" style="text-align: center;">Priscilla</h4>
+        <img class="card-img-top" src="kepek/priscilla.jpg" alt="Priscilla">
+        <div class="card-body">
+          <p class="card-text">Amikor a tinédzser Priscilla Beaulieu egy bulin találkozik az akkor már szupersztár Elvis Presley-vel, a közösen töltött, intim pillanatokban az énekes egy teljesen más emberré válik: izgalmas szerető, szövetséges a magányban, és gyengéd legjobb barát. Sofia Coppola a nő szemszögéből meséli el Elvis és Priscilla hosszú és viharos kapcsolatát, a német katonai bázistól a Graceland-i álombirtokon töltött időkig.</p>
+          <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
+          <p>Játékidő: 113 perc (1 óra 53 perc)</p>
+          <p>Jegyek ára: Felnőtt jegy: 3000 Ft, diák jegy: 2000 Ft, 6 éven aluliaknak ingyenes</p>
+          <a href="#" class="btn btn-primary">Megveszem</a>
+        </div>
+    </div>
+    <div class="card col-md-2" style="width:400px">
+      <h4 class="card-title" style="text-align: center;">Imádlak utálni</h4>
+      <img class="card-img-top" src="kepek/imadlak_utalni.jpg" alt="Imadlak utalni">
+      <div class="card-body">
+        <p class="card-text">Találkoztak, együtt töltöttek egy éjszakát, és azóta gyűlölik egymást. Van ilyen. Bea (Sydney Sweeney) és Ben (Glen Powell) biztos, hogy nem illenek össze. Ha néha véletlenül összefutnak valahol, tutira elszabadul a pokol: csak bántani tudják egymást. De lesz egy esküvő Ausztráliában, amin mindkettejüknek részt kell venniük. Nincs kibúvó, nincs duma: utazniuk kell. Néhány napon, néhány bulin, néhány vacsorán keresztül el kell viselniük egymás közelségét, miközben egy gyönyörű tengerparti házban ott kavarog körülöttük egy csomó régi szerelmük, néhány kíváncsi rokonuk és kavarni mindig kész felmenőjük. Szóval, azt teszik, amit két érett, felnőtt, felelősségteljes ember ilyenkor tehet: úgy tesznek, mintha szerelmespár lennének – azt remélik, hogy így mindenkinek könnyebb lesz. Nem is tévedhettek volna nagyobbat.</p>
+        <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
+        <p>Játékidő: 104 perc (1 óra 44 perc)</p>
+        <p>Jegyek ára: Felnőtt jegy: 3000 Ft, diák jegy: 2000 Ft, 6 éven aluliaknak ingyenes</p>
+        <a href="#" class="btn btn-primary">Megveszem</a>
+      </div>
+  </div>
+
         </article>
-        <aside class="col-md-3">
-            <h2>Sablon12</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tempus nisi. Aenean auctor sit amet magna non euismod. Cras tortor metus, vestibulum et mollis ultrices, pharetra id quam. Duis non est augue. Maecenas felis orci, pellentesque sit amet vulputate venenatis, ullamcorper eget orci. Quisque mattis blandit elit, eu facilisis lacus accumsan sed. Donec ac vehicula arcu, vitae molestie ante.</p>
+        <aside class="col-md-3" style="margin-top: 2%;">
+            <h2>Kapcsolódó cikkek</h2>
+            <ol>
+              <li><a href="https://index.hu/kultur/cinematrix/2023/12/16/wonka-mozi-film-fantasy-warner-bros-regeny-adaptacio-eredetsztori-timothee-chalamet-kritika/" target="_blank">Teljesen elvarázsolt minket Timothée Chalamet új karácsonyi filmje...</a></li>
+              <li><a href="https://index.hu/kultur/2024/01/12/nem-fogja-elhinni-ki-ter-vissza-a-mozikba-lassie-kutya-skot-juhasz-csaladi-film/" target="_blank">Generációk nőttek fel a hosszú szőrű skót juhászkutya, Lassie történetén. Most egy újabb korosztály ismerheti meg a sztorit, ugyanis a híres eb kalandjai idén folytatódnak: Lassie 2024-ben visszatér a mozivászonra...</a></li>
+              <li><a href="https://fidelio.hu/vizual/a-pusztasagot-nem-lehet-megmuvelni-kritika-a-fattyu-cimu-filmrol-180220.html" target="_blank">A pusztaságot nem lehet megművelni - kritika A fattyú című filmről...</a></li>
+              <li><a href="https://www.mafab.hu/article/mar-februarban-a-mozikban-magyar-szinkronos-elozetest-kapott-az-uj-elvis-film-a-priscilla--35#google_vignette" target="_blank">Az idei év egyik legdrámaibb életrajzi filmjének ígérkezik Sofia Coppola rendezése. Megérkezett a Priscilla magyar előzetese...</a></li>
+            </ol>
         </aside>
         <footer class="col-md-12">
-            <p>Minden jog fenntartva!</p>
+            <p>Ⓒ Minden jog fenntartva!</p>
         </footer>
     </main>
 </body>

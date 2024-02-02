@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    color: #473734;
+}
+
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
