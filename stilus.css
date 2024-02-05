@@ -16,6 +16,15 @@ a:visited{
     color: #dd434c;
 }
 
+.divek{
+    background-color: black;
+    color: white;
+}
+
+.gombok:visited{
+    color: white;
+}
+
 footer{
     text-align: center;
     padding-top: 10px;
