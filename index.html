@@ -9,35 +9,38 @@
     <link rel="stylesheet" href="stilus.css">
 </head>
 <body class="container-fluid">
-    <main class="row" style="background-color: #e2dcd9; color: #473734;">
-        <header class="col-md-12" style="margin-top: 1%;">
+    <main class="row">
+        <header class="col-md-12">
             <h1>Webáruház</h1>
         </header>
         <nav class="navbar navbar-expand-sm bg-light">
-            <div class="container-fluid" style="background-color: black;">
+            <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html" style="color: white;">Kezdőlap</a>
+                        <a class="nav-link active" href="index.html">Kezdőlap</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="galeria.html" style="color: white;">Galéria</a>
+                        <a class="nav-link active" href="galeria.html">Galéria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" style="color: white;">Admin</a>
+                        <a class="nav-link active" href="#">Admin</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <aside class="col-md-2" style="margin-top: 2%;">
+        <aside class="col-md-2">
           <h4>Keresési feltételek</h4>
-          <form action="">
+          <form action="#" method="get">
             <label for="gsearch">Film neve: </label>
-            <input type="search" id="gsearch" name="gsearch" placeholder="Film cím" style="margin: 5px;">
+            <input type="search" id="gsearch" name="gsearch" placeholder="Film cím">
+            <label for="korhatar">Korhatár: </label>
+            <input type="range" id="korhatar" name="korhatar" min="6" max="18" oninput="this.form.korhatar_szam.value=this.value">
+            <input type="number" name="korhatar_szam" size="3" oninput="this.form.korhatar.value=this.value"><br>
           </form>
         </aside>
-        <article class="col-md-8 row" style="gap: 5px; margin-top: 2%;">
-            <div class="card col-md-2 divek" style="width:400px;">
-                <h4 class="card-title" style="text-align: center;">A fattyú</h4>
+        <article class="col-md-8 row">
+            <div class="card col-md-3" style="width: 400px;">
+                <h4 class="card-title">A fattyú</h4>
                 <img class="card-img-top" src="kepek/a_fattyu.jpg" alt="Fattyu">
                 <div class="card-body">
                   <p class="card-text">1755-ben Ludvig Kahlen kapitány elindul, hogy teljesítsen egy lehetetlennek tűnő küldetést: meg akarja hódítani a zord, lakhatatlan dán vidéket. A férfi célja, hogy kolóniát építsen a király nevében. De egy könyörtelen helyi földesúr másképp gondolkodik és arrogánsan azt hiszi, hogy ez a föld kizárólag az övé. Kahlen keményfejű és úgy érzi, a király megbízása és saját elszántsága elegendő ahhoz, hogy sikerrel járjon. Az összecsapás elkerülhetetlennek tűnik a két fél között, a kapitányt ráadásul az érzelmei is fűtik, miután rátalál élete szerelmére.</p>
@@ -47,18 +50,18 @@
                   <a href="#" class="btn btn-primary gombok">Megveszem</a>
                 </div>
             </div>
-            <div class="card col-md-2 divek" style="width:400px">
-              <h4 class="card-title" style="text-align: center;">Aquaman és az elveszett királyság</h4>
+            <div class="card col-md-3" style="width: 400px;">
+              <h4 class="card-title">Aquaman és az elveszett királyság</h4>
               <img class="card-img-top" src="kepek/aquaman.jpg" alt="Aquaman">
               <div class="card-body">
                 <p class="card-text">Az óceán soha nem békés! Ezért nem pihenhet meg egyetlen percre sem az óceánok hét királyságának uralkodója. Black Manta megpróbálta már legyőzni Aquamant, a világ tengereinek urát (Jason Momoa), de kudarcot vallott. Továbbra is meg akarja bosszulni az apja halálát, így aztán bármire hajlandó, és bárkivel szövetkezik, hogy elpusztítsa ősellenségét. És most erősebb, mint eddig bármikor, mert megszerezte a legendák csodafegyverét, a fekete szigonyt, amelynek segítségével egy ősi, gonosz erőt szabadít a világra. Aquaman kénytelen kiszabadítani börtönbe zárt testvérét, Orm királyt (Patrick Wilson), Atlantisz egykori uralkodóját. Békét nem kötnek, de átmeneti szövetséget igen - ha nem teszik meg, akkor Aquaman családja, azután az összes tenger, végül az egész világ elpusztul.</p>
                 <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
                 <p>Jegyek ára: Felnőtt: 3000 Ft, diák: 2000 Ft, 6 éves kor alatt és 65 éves kor felett ingyenes</p>
                 <p>Játékidő: 124 perc (2 óra 4 perc)</p>
-                <a href="#" class="btn btn-primary gombok">Megveszem</a>
+                <a href="#" class="btn btn-primary">Megveszem</a>
               </div>
           </div>
-          <div class="card col-md-2 divek" style="width:400px">
+          <div class="card col-md-3" style="width: 400px;">
             <h4 class="card-title" style="text-align: center;">Lassie - Állati mentőakció</h4>
             <img class="card-img-top" src="kepek/lassie.jpg" alt="Lassie">
             <div class="card-body">
@@ -66,10 +69,10 @@
               <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 6 éven aluliaknak nem ajánlott!</p>
               <p>Jegyek ára: Felnőtt: 3000 Ft, diák: 2000 Ft, 6 éves kor alatt és 65 éves kor felett ingyenes</p>
               <p>Játékidő: 91 perc (1 óra 31 perc)</p>
-              <a href="#" class="btn btn-primary gombok">Megveszem</a>
+              <a href="#" class="btn btn-primary">Megveszem</a>
             </div>
         </div>
-        <div class="card col-md-2 divek" style="width:400px">
+        <div class="card col-md-3" style="width: 400px;">
           <h4 class="card-title" style="text-align: center;">Wonka</h4>
           <img class="card-img-top" src="kepek/wonka.jpg" alt="Wonka">
           <div class="card-body">
@@ -77,10 +80,10 @@
             <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 6 éven aluliaknak nem ajánlott!</p>
             <p>Jegyek ára: Felnőtt: 3000 Ft, diák: 2000 Ft, 6 éves kor alatt és 65 éves kor felett ingyenes</p>
             <p>Játékidő: 117 perc (1 óra 57 perc)</p>
-            <a href="#" class="btn btn-primary gombok">Megveszem</a>
+            <a href="#" class="btn btn-primary">Megveszem</a>
           </div>
       </div>
-      <div class="card col-md-2 divek" style="width:400px">
+      <div class="card col-md-3" style=" width: 400px;">
         <h4 class="card-title" style="text-align: center;">Priscilla</h4>
         <img class="card-img-top" src="kepek/priscilla.jpg" alt="Priscilla">
         <div class="card-body">
@@ -88,10 +91,10 @@
           <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
           <p>Jegyek ára: Felnőtt: 3000 Ft, diák: 2000 Ft, 6 éves kor alatt és 65 éves kor felett ingyenes</p>
           <p>Játékidő: 113 perc (1 óra 53 perc)</p>
-          <a href="#" class="btn btn-primary gombok">Megveszem</a>
+          <a href="#" class="btn btn-primary">Megveszem</a>
         </div>
     </div>
-    <div class="card col-md-2 divek" style="width:400px">
+    <div class="card col-md-2" style="width: 400px;">
       <h4 class="card-title" style="text-align: center;">Imádlak utálni</h4>
       <img class="card-img-top" src="kepek/imadlak_utalni.jpg" alt="Imadlak utalni">
       <div class="card-body">
@@ -99,12 +102,11 @@
         <p style="font-weight: bold; padding-left: 3px;" class="text-bg-danger">Korhatár: 16 éven aluliaknak nem ajánlott!</p>
         <p>Jegyek ára: Felnőtt: 3000 Ft, diák: 2000 Ft, 6 éves kor alatt és 65 éves kor felett ingyenes</p>
         <p>Játékidő: 104 perc (1 óra 44 perc)</p>
-        <a href="#" class="btn btn-primary gombok">Megveszem</a>
+        <a href="#" class="btn btn-primary">Megveszem</a>
       </div>
   </div>
-
         </article>
-        <aside class="col-md-2" style="margin-top: 2%;">
+        <aside class="col-md-2">
             <h2>Kapcsolódó cikkek</h2>
             <ol>
               <li><a href="https://index.hu/kultur/cinematrix/2023/12/16/wonka-mozi-film-fantasy-warner-bros-regeny-adaptacio-eredetsztori-timothee-chalamet-kritika/" target="_blank">Teljesen elvarázsolt minket Timothée Chalamet új karácsonyi filmje...</a></li>
