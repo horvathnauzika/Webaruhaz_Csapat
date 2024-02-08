@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="container-fluid">
+    <main class="row">
+        <header class="col-md-12">
+            <h1>Webáruház</h1>
+        </header>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="urlap.html">Űrlap</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div class="container mt-3">
+                <h2 class="text-center">Vásárlói visszajelzés küldése</h2>
+                <form action="#">
+                    <div class="mb-3 mt-3">
+                        <label for="vnev">Vezetéknév:</label>
+                        <input type="vnev" class="form-control" id="vnev" placeholder="Pl. Kovács" name="vnev">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="knev">Keresztnév:</label>
+                        <input type="knev" class="form-control" id="knev" placeholder="Pl. József" name="knev">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="szdatum">Születési dátum:</label>
+                        <input type="szdatum" class="form-control" id="szdatum" placeholder="éééé. hh. nn 📅"
+                            name="szdatum">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Pl. nev@gmail.com"
+                            name="szdatum">
+                    </div>
+
+                    <div class="container mt-3">
+                        <h2 class="text-center">Melyik filmre vásárolt jegyet?</h2>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                            <label class="form-check-label" for="check1">Argylle: A szuperkém</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                            <label class="form-check-label" for="check2">Wonka</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                            <label class="form-check-label" for="check2">Imádlak utálni</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                            <label class="form-check-label" for="check2">A fattyú</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                            <label class="form-check-label" for="check2">Aquaman és az Elveszett Királyság</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                            <label class="form-check-label" for="check2">Emma és a fekete jaguár</label>
+                          </div>
+                    </div><br>
+
+                    <div class="form-check">
+                        <h2 class="text-center">Mit gondol a jegyek áráról?</h2>
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">Túl
+                        drágának találom
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Pont
+                        megfelelő
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Túl
+                        olcsónak találom
+                        <label class="form-check-label"></label>
+                    </div><br>
+                    
+                    <h2 class="text-center">Megjegyzés írása</h2>
+                    <p>Ha van tippje, hogy a jövőben miben fejlesszük a weboldalt, vagy a szolgáltalásainkat, kérjük az alábbi megjegyzés menüben fejtse ki.</p>
+
+                    <div class="form-floating">
+                        
+                        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                        <label for="comment">Megjegyzés</label>
+                      </div><br>
+                      <button type="button" class="btn btn-primary">Küldés</button>
+                </form>
+            </div>
+        </article>
+        <footer class="col-md-12">
+            <p>Ⓒ Minden jog fenntartva!</p>
+        </footer>
+    </main>
+</body>
+
+</html>
